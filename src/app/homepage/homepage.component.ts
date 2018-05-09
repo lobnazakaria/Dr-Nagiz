@@ -11,5 +11,12 @@ export class HomepageComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  images=[
+    'c.pro',
+    'c.pro',
+    'c.pro',
+    'c.pro',
+    'c.pro',
+    'c.pro'
+  ]
 }

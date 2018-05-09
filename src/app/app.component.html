@@ -1,5 +1,5 @@
 <div class="main-bar">
-  <a href="index.html" title="home"><img class="logo" src="images/logo.png"></a>
+  <a [routerLink]="['/Home']" title="home"><img class="logo" src="../assets/images/logo.png"></a>
   
   <form id="demo-2">
       <input type="search" placeholder="Search">
@@ -18,8 +18,8 @@
     </div>
   </label>
   <ul>
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">P&amp;S</a></li>
+      <li class="active"><a [routerLink]="['/Home']">Home</a></li>
+      <li><a [routerLink]="['/ProblemsandSolutions']">P&amp;S</a></li>
       <li><a href="#">Compares</a></li>
       <li><a href="#">Reviews</a></li>
       <li><a href="#">About</a></li>
@@ -27,14 +27,24 @@
   </ul>
 </nav>
 <router-outlet></router-outlet>
-<footer class="footer">
+<footer class="footer text-center">
   <div class="row">
     <div class="col-md-3">
+      <div class="row social-row">
+        <div class="col-md-4">
 
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4">
+
+        </div>
+      </div>
     </div>
     <div class="col-md-6">
       <div class="main-bar">
-        <a href="index.html" title="home"><img class="logo" src="images/logo.png"></a>
+        <a [routerLink]="['/Home']" title="home"><img class="logo-footer" src="../assets/images/logo.png"></a>
       </div>
     </div>
     <div class="col-md-3">

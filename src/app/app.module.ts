@@ -8,6 +8,7 @@ import { PnSComponent } from './pn-s/pn-s.component';
 import { OwlModule } from 'ngx-owl-carousel';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
 const appRoutes: Routes = [
   { path: 'Home', component: HomepageComponent },
   { path: 'ProblemsandSolutions',component: PnSComponent },
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomepageComponent,
     PnSComponent,
-    ContactComponent
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

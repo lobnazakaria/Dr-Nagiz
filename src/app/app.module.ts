@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PnSComponent } from './pn-s/pn-s.component';
 import { OwlModule } from 'ngx-owl-carousel';
+import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 const appRoutes: Routes = [
   { path: 'Home', component: HomepageComponent },
   { path: 'ProblemsandSolutions',component: PnSComponent },
+  {path:'ContactUS', component:ContactComponent},
   { path: '',   redirectTo: 'Home', pathMatch: 'full' },
   
 ];
@@ -17,12 +20,14 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomepageComponent,
-    PnSComponent
+    PnSComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     GalleriaModule,
     OwlModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

@@ -9,12 +9,15 @@ export class AppComponent implements OnInit {
   title = 'app';
   ngOnInit(){
     $(document).ready(function(){  
-    
-    
-   
-      var win = $(window),
-      navbar = $('nav'),
-      pos = $(".main-bar").innerHeight(),
+        var url = window.location;
+        $('ul a[href="'+ url +'"]').parent().addClass('active');
+        $('ul a').filter(function() {
+         return this.routerLink == url;
+        }).parent().addClass('active');
+
+        var win = $(window),
+        navbar = $('nav'),
+        pos = $(".main-bar").innerHeight(),
           
       
           sticky = function(){ 
@@ -29,21 +32,9 @@ export class AppComponent implements OnInit {
               $(".main-bar").css("margin-bottom","0px");
               
           }
-          /*
-          if( win.scrollTop() >= $('.products').outerHeight() - 464 ){
-              navbar.removeClass('sticky');
-              $(".sticky-fix").css("display","none");
-          }
-          */
+         
       }
-      
-      
-  win.scroll(sticky);
-      
-     
-      
-       
-  
-  });
+      win.scroll(sticky);
+    });
   }
 }

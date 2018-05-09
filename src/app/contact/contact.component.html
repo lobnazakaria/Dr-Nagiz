@@ -1,0 +1,81 @@
+<section class="contact-header text-center">
+  <div>
+    <h1 class="contact-txt">Contact Us</h1>
+  </div>
+</section>
+<section class="container sec-section">
+  <div class="row contact-row">
+    <div class="col-md-6 col-sm-6">
+      <form [formGroup]='send_form'> 
+          <fieldset id="commentFS">
+            <legend><h2 class="form-header">Send Message</h2></legend> 
+            <div class="form-container">  
+              <div class="row columns">  
+                <div class="control">
+                  <input type="text" class="form-control" formControlName='firstName' placeholder="Your First name">  
+                </div>  
+                <div class="control">  
+                  <br>  
+                  <input type="text" class="form-control" formControlName='lastName' placeholder="Your Last name">  
+                </div>  
+                <br>  
+                <div class="control">
+                  <input type="text" class="form-control" formControlName='email' placeholder="Your Email">
+                </div>  
+                <br>  
+                <div class="control">  
+                  <textarea class="form-control" formControlName='message' placeholder="Your message"></textarea>
+                </div>  
+                <br>  
+              </div>
+            </div>
+          
+          <div class="text-center">  
+            <input type="Submit" value="Send" class="btn btn-primary sendBtn">  
+          </div> 
+        </fieldset> 
+        </form>
+      </div>
+      <div class="col-md-6 col-sm-6 text-center">
+        <div class="row contact-info">
+          <div class="col-md-4">
+            <div>
+              <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <span class="icon-txt">Place Address Here</span>
+          </div>
+        </div>
+        <div class="row contact-info">
+            <div class="col-md-4">
+              <div>
+                  <span class="glyphicon glyphicon-earphone icon"></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <span class="icon-txt">01xxxxxxxx</span>
+            </div>
+        </div>
+        <div class="row contact-info">
+            <div class="col-md-4">
+              <div>
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <span class="icon-txt">example@example.com</span>
+            </div>
+        </div>
+        <hr>
+        <div class="row soc-col text-center">
+          <ul>
+            <li><i class="fab fa-facebook-f soc-icon"></i></li>
+            <li><i class="fab fa-twitter soc-icon"></i></li>
+            <li><i class="fab fa-google-plus-g soc-icon"></i></li>
+            <li><i class="fab fa-whatsapp soc-icon"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>

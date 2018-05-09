@@ -274,7 +274,7 @@ ul.rating li.active svg{
 
 .card:hover a{
     background-color: #333;
-    color: #fff;
+    color: #fff !important;
 }
 
 

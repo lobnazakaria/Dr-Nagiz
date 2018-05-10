@@ -1,0 +1,32 @@
+.contact-header{
+    background-color: dimgrey;
+    padding: 4em;
+}
+.contact-txt{
+    color: white;
+    font-weight: 600;
+}
+.who-section{
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+.who-img{
+    width: 340px;
+    object-fit: cover;
+}
+.who-header{
+    padding: 4em;
+}
+.soc-col ul{
+    display: block;
+    text-align: center;
+    padding-top: 31px;
+    margin-left: 0em;
+  }
+  .soc-col ul li{
+    display: inline-block;
+    padding-right: 55px;
+  }
+  .soc-icon{
+      font-size:23px;
+  }

@@ -13,6 +13,7 @@ const appRoutes: Routes = [
   { path: 'Home', component: HomepageComponent },
   { path: 'ProblemsandSolutions',component: PnSComponent },
   {path:'ContactUS', component:ContactComponent},
+  {path:'AboutUs',component:AboutComponent},
   { path: '',   redirectTo: 'Home', pathMatch: 'full' },
   
 ];

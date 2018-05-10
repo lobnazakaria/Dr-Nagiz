@@ -69,11 +69,11 @@ legend {
     display: block;
     text-align: center;
     padding-top: 31px;
-    margin-left: 4em;
+    margin-left: 0em;
   }
   .soc-col ul li{
     display: inline-block;
-    padding-right: 26px;
+    padding-right: 55px;
   }
   .soc-icon{
       font-size:23px;

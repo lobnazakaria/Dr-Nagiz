@@ -22,6 +22,8 @@ export class PnSComponent implements OnInit {
             thumbnailsColumns: 5,
             imageAnimation: NgxGalleryAnimation.Slide,
             imageAutoPlay:true,
+            imageSize:NgxGalleryImageSize.Contain,
+            imageDescription: true
         },
         // max-width 800
         {
@@ -44,32 +46,38 @@ export class PnSComponent implements OnInit {
         {
             small: '../../assets/images/problem.jpg',
             medium: '../../assets/images/problem.jpg',
-            big: '../../assets/images/problem.jpg'
+            big: '../../assets/images/problem.jpg',
+            description:' first image description'
         },
         {
             small: '../../assets/images/problem.jpg',
             medium: '../../assets/images/problem.jpg',
-            big: '../../assets/images/problem.jpg'
+            big: '../../assets/images/problem.jpg',
+            description:' second image description'
         },
         {
             small: '../../assets/images/problem.jpg',
             medium: '../../assets/images/problem.jpg',
-            big: '../../assets/images/problem.jpg'
+            big: '../../assets/images/problem.jpg',
+            description:'third image description'
         },
         {
           small: '../../assets/images/problem.jpg',
           medium: '../../assets/images/problem.jpg',
-          big: '../../assets/images/problem.jpg'
+          big: '../../assets/images/problem.jpg',
+          description:'forth image description'
       },
       {
         small: '../../assets/images/problem.jpg',
         medium: '../../assets/images/problem.jpg',
-        big: '../../assets/images/problem.jpg'
+        big: '../../assets/images/problem.jpg',
+        description:' sixth image description'
     },
     {
       small: '../../assets/images/problem.jpg',
       medium: '../../assets/images/problem.jpg',
-      big: '../../assets/images/problem.jpg'
+      big: '../../assets/images/problem.jpg',
+      description:'seventh image description'
   }
     ];
 }

@@ -1,0 +1,286 @@
+.cover-section{
+    background-image: url(../../assets/images/c-product.jpg),url(../../assets/images/c-product2.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, no-repeat;
+    padding: 15px;
+    background-size: contain;
+    height: 350px;
+    margin-bottom: 2em;
+    position: relative;
+}
+.cover-section::before{
+    background-image: url(../../assets/images/vs-transparent-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height: 100.1%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.overlayTwo{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: .7;
+}
+.most-viewed {
+    width: 57%;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 1em;
+    padding: 21px;
+    padding-left: -121px;
+    -webkit-box-shadow: 0px 1px 1px 1px #ddd;
+    box-shadow: 0px 1px 1px 1px #ddd;
+    border-radius: 49px;
+    border: 1px solid #ddd;
+    margin-left: 9em;
+}
+/*...................................*/
+.main{
+    min-height: 600px;
+    min-height: 490px;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.card{
+    box-shadow: 0px 0px 9px 0px rgba(149, 146, 146, 0.43);
+    box-shadow: 1px 1px 20px 4px rgba(0,0,0,.15);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 15px 10px;
+    margin-bottom: 30px;
+}
+
+.card .img-container{
+    float: left;
+    width: 30%;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.img-container .overlay{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(51, 51, 51, 0.65);
+    color: #fff;
+    
+    display: none;
+}
+
+.overlay .category{
+    width: 80px;
+    border: 1px solid #eee;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.overlay .category img{
+    width: 14px;
+    margin-top: -3px;
+    margin-right: 5px;
+}
+
+.card:hover .img-container .overlay{
+    display: block;
+    cursor: pointer
+}
+
+
+
+
+.img-container .thumbnail{
+    width: 220px; height: 220px; 
+    object-fit: contain;
+    border: none;
+    margin: 0;padding: 0;
+    
+}
+
+.card .content{
+    padding: 0 25px;
+    float: right;
+    width: 70%;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.content h2{
+    margin-top: 0;
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 1.3
+}
+
+.content p{
+    margin-bottom: 0;
+    color: #555;
+}
+
+.content p span{
+    float: right;
+    display: block;
+    margin-top: 10px;
+    color: #888;
+    font-size: 13px;
+}
+
+.content p span img{
+    width: 20px;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+
+.content p a{
+    font-size: .9em;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    display: inline-block;
+    color: #333;
+    margin-top: 10px;
+}
+
+.card:hover a{
+    background-color: #333;
+    color: #fff !important;
+}
+
+
+
+
+.compare-card .img-container{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.compare-card .img-container span.vs{
+    font-size: 30px;
+    font-weight: 600;
+    display: block;
+    margin: 0;
+    width: 33%;
+    float: left;
+    margin-top: 15%;
+}
+
+.compare-card .overlay .category{
+    width: 100px;
+}
+
+
+.compare-card .content{
+    width: 100%;
+    padding: 10PX;
+}
+
+.compare-card .votes{
+    float: left;
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0; bottom: 10px;
+    padding: 0 10px;
+}
+
+.compare-card .votes span{
+    float: left;
+    padding: 5px;
+    font-size: 17px;
+    background-color: #3378d8;
+    color: #fff;
+    border-radius: 3px;
+}
+.compare-card .votes span:last-of-type{
+    float: right;
+    background-color: #139f49;
+}
+
+.compare-card .category img{
+    transform: rotate(90deg);
+}
+
+.product1, .product2{
+    width: 33.3333%;
+    display: block;
+    float: left;
+    object-fit: contain;
+    height: 200px;
+}
+
+.product2{
+    float: right;
+}
+
+
+
+
+
+.problem-card .padge img{
+    width: 18px;
+}
+
+.problem-card .category{
+    width: 120px;
+    font-size: 12.5px;
+    padding: 5px 0;
+    text-align: center;
+}
+/*..................................*/
+.moreBtn{
+    padding: 1em;
+    border-radius: 15px;
+    margin-right: 4em;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 2em;
+    transition: .5s;
+}
+.moreBtn:hover{
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+}
+
+
+/************************************************/
+
+
+@media only screen and (max-width:768px){
+   .card .img-container{
+        width: 100%;
+        float: none;
+        margin-bottom: 15px;
+    }
+    .img-container .thumbnail{
+        margin: 0 auto;
+    }
+    .card .content{
+        width: 100%;
+        padding: 10px;
+    }
+}

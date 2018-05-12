@@ -28,8 +28,8 @@
                 <button *ngIf="!clicked" class="btn btn-default moreBtn" (click)="viewHidden()">View More</button> 
     </main>
 </section>
-
-<main class="main container text-center" *ngIf="clicked">
+<section class=" container text-center" *ngIf="clicked">
+<main class="main">
     <div class="card problem-card">
             <div class="img-container">
                 <img src="../../assets/images/problem.jpg" class="thumbnail">
@@ -55,5 +55,5 @@
             <button class="btn btn-default text-center moreBtn">View More</button>
         </div>
 </main>
-
+</section>
 

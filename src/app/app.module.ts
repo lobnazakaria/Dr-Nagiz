@@ -12,12 +12,14 @@ import { AboutComponent } from './about/about.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { NgxImageGalleryModule } from 'ngx-image-gallery';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { CompareComponent } from './compare/compare.component';
 const appRoutes: Routes = [
   { path: 'Home', component: HomepageComponent },
   { path: 'ProblemsandSolutions',component: PnSComponent },
   {path:'ContactUS', component:ContactComponent},
   {path:'AboutUs',component:AboutComponent},
   {path:'Reviews', component:ReviewsComponent},
+  {path:'Compare', component:CompareComponent},
   { path: '',   redirectTo: 'Home', pathMatch: 'full' },
   
 ];
@@ -29,7 +31,8 @@ const appRoutes: Routes = [
     PnSComponent,
     ContactComponent,
     AboutComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    CompareComponent
   ],
   imports: [
     BrowserModule,

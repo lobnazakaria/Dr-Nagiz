@@ -1,6 +1,18 @@
-.gallary-sec{
-    margin-top:23px;
+.galleria-section{
+   text-align: center;
+    margin-top: 0em;
     margin-bottom: 2em;
+    background-color: #333;
+    }
+   .ngx-gallery-thumbnail.ngx-gallery-clickable {  
+        border: 1px solid #ddd;
+    }
+
+ngx-gallery /deep/ .ngx-gallery-arrow {
+   color: #fff;
+}
+ .ngx-gallery-thumbnail.ngx-gallery-clickable {  
+    border: 1px solid #ddd;
 }
 .most-viewed {
     width: 57%;
@@ -23,7 +35,9 @@
     box-shadow: 0px 1px 11px 4px #ddd !important;
 }
 .main{
-    min-height: 600px;
+    min-height: 490px;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 
 .card{
@@ -220,7 +234,23 @@ ul.rating li.active svg{
     color: #fff;
    
 }
-
+/*.....................................*/
+.moreBtn{
+    padding: 1em;
+    border-radius: 15px;
+    margin-right: 4em;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 2em;
+    transition: .5s;
+}
+.moreBtn:hover{
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+}
 
 
 @media only screen and (max-width:768px){

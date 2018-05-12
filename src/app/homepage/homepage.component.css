@@ -510,8 +510,14 @@ ul.rating li.active svg{
     
 }
 
-
-
+.owl-carousel.owl-loaded {
+    display: initial !important;
+}
+.owl-carousel .owl-item img {
+    border: 1px solid #ddd;
+    display: block;
+    width: 100%;
+}
 
 .articles .owl-nav img{
     width: 45px; height: 35px;

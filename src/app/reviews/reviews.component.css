@@ -1,11 +1,199 @@
 .galleria-section{
+    background-color: #333;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 0em;
     margin-bottom: 2em;
 }
 ngx-gallery /deep/ .ngx-gallery-arrow {
-   color: aqua;
+   color: #fff;
 }
- .ngx-gallery-thumbnail.ngx-gallery-clickable {  
+ngx-gallery /deep/ .ngx-gallery-thumbnail.ngx-gallery-active {  
+    border: 5px solid blueviolet;
+}
+/*......................................*/
+.most-viewed {
+    width: 57%;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 1em;
+    padding: 21px;
+    padding-left: -121px;
+    -webkit-box-shadow: 0px 1px 1px 1px #ddd;
+    box-shadow: 0px 1px 1px 1px #ddd;
+    border-radius: 49px;
     border: 1px solid #ddd;
+    margin-left: 9em;
+}
+/*.............................*/
+.main{
+    min-height: 330px;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.card{
+    box-shadow: 0px 0px 9px 0px rgba(149, 146, 146, 0.43);
+    box-shadow: 1px 1px 20px 4px rgba(0,0,0,.15);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 15px 10px;
+    margin-bottom: 30px;
+}
+
+.card .img-container{
+    float: left;
+    width: 30%;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.img-container .overlay{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(51, 51, 51, 0.65);
+    color: #fff;
+    
+    display: none;
+}
+
+.overlay .category{
+    width: 80px;
+    border: 1px solid #eee;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.overlay .category img{
+    width: 14px;
+    margin-top: -3px;
+    margin-right: 5px;
+}
+
+.card:hover .img-container .overlay{
+    display: block;
+    cursor: pointer
+}
+
+ul.rating{
+    position: absolute;
+    bottom: 3px; left: 3px;
+    padding: 5px;
+    background-color: rgb(250, 250, 250);
+    margin-bottom: 0;
+    border-radius: 20px;
+}
+
+ul.rating li{
+    float: left;
+    margin-right: 3px;
+    color: #bfbfbf;
+    font-size: 12px;
+}
+
+ul.rating li.active svg{
+    color: #FF912C;
+}
+
+.img-container .thumbnail{
+    width: 220px; height: 220px; 
+    object-fit: contain;
+    border: none;
+    margin: 0;padding: 0;
+    
+}
+
+.card .content{
+    padding: 0 25px;
+    float: right;
+    width: 70%;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.content h2{
+    margin-top: 0;
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 1.3
+}
+
+.content p{
+    margin-bottom: 0;
+    color: #555;
+}
+
+.content p span{
+    float: right;
+    display: block;
+    margin-top: 10px;
+    color: #888;
+    font-size: 13px;
+}
+
+.content p span img{
+    width: 20px;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+
+.content p a{
+    font-size: .9em;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    display: inline-block;
+    color: #333;
+    margin-top: 10px;
+}
+
+.card:hover a{
+    background-color: #333;
+    color: #fff !important;
+}
+/*.....................................*/
+.moreBtn{
+    padding: 1em;
+    border-radius: 15px;
+    margin-right: 4em;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 2em;
+    transition: .5s;
+}
+.moreBtn:hover{
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+
+@media only screen and (max-width:768px){
+    .card .img-container{
+        width: 100%;
+        float: none;
+        margin-bottom: 15px;
+    }
+    .img-container .thumbnail{
+        margin: 0 auto;
+    }
+    .card .content{
+        width: 100%;
+        padding: 10px;
+    }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize } from 'ngx-gallery';
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize, NgxGalleryLayout } from 'ngx-gallery';
 @Component({
   selector: 'app-reviews',
   templateUrl: './reviews.component.html',
@@ -8,19 +8,21 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImag
 export class ReviewsComponent implements OnInit {
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
+  clicked:boolean=false;
   constructor() { }
 
   ngOnInit(): void {
  
     this.galleryOptions = [
         {
-            width: '100%',
-            height: '400px',
-            thumbnailsColumns: 3,
-            imageAnimation: NgxGalleryAnimation.Slide,
+            width: '90%',
+            height: '500px',
+            thumbnailsColumns: 6,
+            imageAnimation: NgxGalleryAnimation.Fade,
             imageSize:NgxGalleryImageSize.Contain,
             imageAutoPlay:true,
             thumbnailSize:NgxGalleryImageSize.Contain,
+            
         },
         // max-width 800
         {
@@ -29,8 +31,9 @@ export class ReviewsComponent implements OnInit {
             height: '600px',
             imagePercent: 80,
             thumbnailsPercent: 20,
-            thumbnailsMargin: 20,
-            thumbnailMargin: 20
+            thumbnailsMargin: 10,
+            thumbnailMargin: 10,
+            
         },
         // max-width 400
         {
@@ -41,9 +44,9 @@ export class ReviewsComponent implements OnInit {
 
     this.galleryImages = [
         {
-            small: '../../assets/images/c-product.jpg',
-            medium: '../../assets/images/c-product.jpg',
-            big: '../../assets/images/c-product.jpg'
+            small: '../../assets/images/r-product.jpg',
+            medium: '../../assets/images/r-product.jpg',
+            big: '../../assets/images/r-product.jpg'
         },
         {
             small: '../../assets/images/c-product.jpg',
@@ -51,12 +54,34 @@ export class ReviewsComponent implements OnInit {
             big: '../../assets/images/c-product.jpg'
         },
         {
+            small: '../../assets/images/c-product2.png',
+            medium: '../../assets/images/c-product2.png',
+            big: '../../assets/images/c-product2.png'
+        },
+        {
+            small: '../../assets/images/r-product.jpg',
+            medium: '../../assets/images/r-product.jpg',
+            big: '../../assets/images/r-product.jpg'
+        },
+        {
+            small: '../../assets/images/c-product2.png',
+            medium: '../../assets/images/c-product2.png',
+            big: '../../assets/images/c-product2.png'
+        },
+        {
             small: '../../assets/images/c-product.jpg',
             medium: '../../assets/images/c-product.jpg',
             big: '../../assets/images/c-product.jpg'
-        }
+        },
+        {
+            small: '../../assets/images/r-product.jpg',
+            medium: '../../assets/images/r-product.jpg',
+            big: '../../assets/images/r-product.jpg'
+        },
     ];
 }
- 
+viewHidden(){
+    this.clicked=true;
+  }
 
 }

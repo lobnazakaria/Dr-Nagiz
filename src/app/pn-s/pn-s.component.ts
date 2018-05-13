@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize } from 'ngx-gallery';
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImageSize, NgxGalleryLayout } from 'ngx-gallery';
 @Component({
   selector: 'app-pn-s',
   templateUrl: './pn-s.component.html',
@@ -23,7 +23,8 @@ export class PnSComponent implements OnInit {
             imageAnimation: NgxGalleryAnimation.Slide,
             imageAutoPlay:true,
             imageSize:NgxGalleryImageSize.Contain,
-            imageDescription: true
+            imageDescription: true,
+            layout:NgxGalleryLayout.ThumbnailsTop
         },
         // max-width 800
         {
@@ -33,7 +34,8 @@ export class PnSComponent implements OnInit {
             imagePercent: 80,
             thumbnailsPercent: 20,
             thumbnailsMargin: 20,
-            thumbnailMargin: 20
+            thumbnailMargin: 20,
+            layout:NgxGalleryLayout.ThumbnailsTop
         },
         // max-width 400
         {

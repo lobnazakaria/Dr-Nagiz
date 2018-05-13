@@ -4,16 +4,14 @@
     margin-bottom: 2em;
     background-color: #333;
     }
-   .ngx-gallery-thumbnail.ngx-gallery-clickable {  
-        border: 1px solid #ddd;
+    ngx-gallery /deep/ .ngx-gallery-thumbnail.ngx-gallery-active {  
+        border: 5px solid blueviolet;
     }
 
 ngx-gallery /deep/ .ngx-gallery-arrow {
    color: #fff;
 }
- .ngx-gallery-thumbnail.ngx-gallery-clickable {  
-    border: 1px solid #ddd;
-}
+
 .most-viewed {
     width: 57%;
     font-size: 25px;

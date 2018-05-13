@@ -30,3 +30,9 @@
   .soc-icon{
       font-size:23px;
   }
+  @media (max-width:991px) and (min-width:768px){
+    .soc-col ul li{
+       
+        padding-right: 35px;
+      }
+  }

@@ -181,9 +181,16 @@ ul.rating li.active svg{
 }
 
 
-
+@media(max-width:991px){
+    .most-viewed{
+        margin-left: 6em;
+    }
+}
 
 @media only screen and (max-width:768px){
+    .most-viewed{
+        font-size: 20px;
+    }
     .card .img-container{
         width: 100%;
         float: none;
